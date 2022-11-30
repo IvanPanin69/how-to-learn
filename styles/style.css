@@ -9,27 +9,9 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 .header {
   height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-.header {
   position: relative;
   background-color: #f2f2f2;
   min-height: 600px;
@@ -69,7 +51,9 @@
   z-index:2;
 }
 .header__square-pic {
-  size: 568px x 568px;
+
+  width: 568px;
+  height: 568px;
   background-color:  #2f80ed;
   position: absolute;
   top:64px;
@@ -258,6 +242,9 @@
   z-index: 1;
   padding: 0;
   width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 .table__heading_theme_dark {
   z-index: 1;
@@ -291,7 +278,6 @@
   position: absolute;
   overflow: auto;
   margin: 60px auto 40px;
-  position: absolute;
   right: 0;
   left: 0;
   display: flex;
